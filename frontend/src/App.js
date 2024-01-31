@@ -53,6 +53,7 @@ function App() {
   }
   
   return (
+    //inline css styling
     <div className="App">
       <input type="text" value={message} onChange={handleInput} style={{
     padding: '8px',
