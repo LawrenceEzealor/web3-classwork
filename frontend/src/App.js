@@ -12,6 +12,8 @@ function App() {
   };
 
   const contractAddress = "0x2983676cD40a3ae1453Ca07E3dB895c5F9198b77"
+
+  //This function is used to get access to the user's ethereum account
   async function requestAccount() {
     await window.ethereum.request({ method: 'eth_requestAccounts' });
   }
@@ -52,9 +54,39 @@ function App() {
   
   return (
     <div className="App">
-      <input type="text" value={message} onChange={handleInput} />
-      <button onClick={ setMessage } >set message</button>
-      <button onClick={ getMessage }>get message</button>
+      <input type="text" value={message} onChange={handleInput} style={{
+    padding: '8px',
+    margin: '10px 0',
+    width: '200px',
+    boxSizing: 'border-box',
+    borderRadius: '8px',
+    border: '1px solid #ccc',
+    outline: 'none',
+  }}/>
+
+      <button onClick={ setMessage } style={{
+    padding: '10px',
+    margin: '5px',
+    cursor: 'pointer',
+    backgroundColor: 'green',
+    color: '#fff',
+    borderRadius: '8px',
+    border: 'none',
+    outline: 'none',
+    transition: 'background-color 0.3s ease',
+  }}>set message</button>
+  
+      <button onClick={ getMessage } style={{
+    padding: '10px',
+    margin: '5px',
+    cursor: 'pointer',
+    backgroundColor: 'red',
+    color: '#fff',
+    borderRadius: '8px',
+    border: 'none',
+    outline: 'none',
+    transition: 'background-color 0.3s ease',
+  }}>get message</button>
     </div>
   );
 }
