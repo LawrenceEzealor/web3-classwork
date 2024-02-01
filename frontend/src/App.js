@@ -51,7 +51,7 @@ function App() {
   return (
     //inline css styling
     <div className="App">
-      <div className="container mx-auto p-8 bg-red border border-gray-300 rounded-lg shadow-lg">
+      <div className="container mx-auto bg-green-100 p-8 bg-red border border-gray-300 rounded-lg shadow-lg">
         <h1 className="text-3xl font-bold ">Hello There! 🤓</h1>
         <div className="w-[467px] m-auto">
           <input
