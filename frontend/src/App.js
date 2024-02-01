@@ -61,36 +61,16 @@ function App() {
 
       <button
         onClick={setMessage}
-        style={{
-          padding: "10px",
-          margin: "5px",
-          cursor: "pointer",
-          backgroundColor: "green",
-          color: "#fff",
-          borderRadius: "8px",
-          border: "none",
-          outline: "none",
-          transition: "background-color 0.3s ease",
-        }}
+        class="bg-green-500 hover:bg-blue-400 text-white mr-5 ml-5 font-bold py-2 px-4 rounded"
       >
         set message
       </button>
 
       <button
         onClick={getMessage}
-        style={{
-          padding: "10px",
-          margin: "5px",
-          cursor: "pointer",
-          backgroundColor: "red",
-          color: "#fff",
-          borderRadius: "8px",
-          border: "none",
-          outline: "none",
-          transition: "background-color 0.3s ease",
-        }}
+        class="bg-red-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded"
       >
-        get message
+        get message{" "}
       </button>
     </div>
   );
